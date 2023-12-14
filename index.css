@@ -411,11 +411,12 @@ padding-left: 8px;
     background-color: white;
 }
 .outer-footer{
+    margin-top: 10px;
     padding: 10px;
     text-align: center;
     color: #fff;
-    font-size: 18px;
-    background-color: black;
+    font-size: 13px;
+    background-color: darkslategray;
     margin-bottom: -80px;
 }
 @media(max-width: 767px){
