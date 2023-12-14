@@ -66,6 +66,7 @@ video{
     border:rgb(220,220,220);
     border: 2px;
     align-items: center;
+    cursor: pointer;
     
     font-weight:bold;
 }
@@ -92,6 +93,7 @@ video{
     align-items: center;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .website-name{
@@ -205,17 +207,15 @@ video{
     margin-bottom: 5px;
     font-weight: 550;
 }
-.footer{
-    background-color: white;
-}
+
 
 .image-container{
     display:flex;
     align-items: center;
     justify-content: center;
-    
-
-    
+    margin-left: 40px;
+    margin-right: auto;
+  
 
 }
 
@@ -229,16 +229,16 @@ video{
     height: 360px;
   
     border-radius: 13px;
-    box-shadow: 4px 7px 7px 0 grey;
+    box-shadow: 3px 5px 5px 0 whitesmoke;
     cursor: pointer;
     margin: 10px;
     transition:400ms ;
 
 }
-.image-container img:hover{
-    filter: grayscale(1);
+ /* .image-container img:hover{
+    filter: grayscale(0.6);
     transform: scale(1.03);
-}
+}  */
 h1{
     text-align: center;
     margin-top: 60px;
@@ -246,41 +246,156 @@ h1{
     color: #fff;
 
 } 
- .container-1.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+ 
+.container-1.content{
+    position: relative;
+     top: 0;
+    left: 0; 
+     display: flex; 
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%,-50%); 
     color: #fff;
-}
-
-
-
-.container-1.overlay h2 {
-    margin: 0;
-    font-size: 1.5em;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 0.3s;
-    background-color: rgba(0, 0, 0, 0.5);
-    color:orange;
-    transform: translate(50%,50%);
-    top: 100%;
-    left: 100%;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h2{
+    font-size: 20px;
+    font-weight: 200;
+    color: turquoise;
+}
+.content p{
+    font-weight: 300;
+    color: white;
+}
+.content > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
 
 }
-.container-1:hover.container.overlay h2{
-    opacity: 1;
+.content:hover > *{
+    transform: translateY(0);
 }
+.container-1 img:hover{
+    filter: grayscale(0.5);
+    transform: scale(1.03);
+}
+
+
+  
+
+.container-2{
+    max-width: 1000px;
+    margin: auto;
+
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+color: aqua;
+}
+.ul{
+    list-style: none;
+
+}
+.footer{
+    background-color:darkslategrey;
+    padding: 70px 0;
+    margin-top: 52px;
+    bottom: 0;
+   
+    width: 100%;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: -1px 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color:white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position:relative;
+}
+.footer-col h4::before{
+    content: '  ';
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    background-color: #e9e9e9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li::not(:last-child){
+    margin-bottom: -15px;
+}
+.footer li{
+    list-style: none;
+    display: flex;
+    text-align:center;
+    
+
+}
+.footer ul li a{
+     font-size: 16px;
+     text-transform: capitalize;
+     color: turquoise;
+     text-decoration: none;
+     display: block;
+     font-weight: 300;
+     transition: all 0.3s ease;
+     margin-left: -40px;
+
+}
+.footer li a{
+    text-decoration: none;
+    color: turquoise;
+    padding-right: 30px;
+    
+}
+.footer-col ul li a:hover{
+color:white;
+padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color:turquoise;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+    color: black;
+    background-color: white;
+}
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background-color: black;
+    margin-bottom: -80px;
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }}
