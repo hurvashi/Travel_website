@@ -411,6 +411,7 @@ padding-left: 8px;
     background-color: white;
 }
 .outer-footer{
+    margin-top: 10px;
     padding: 10px;
     text-align: center;
     color: #fff;
