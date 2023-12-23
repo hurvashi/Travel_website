@@ -45,13 +45,14 @@ video{
     margin-left: 800px;
     border-style: outset;
     border-width: 2px;
+    z-index: 1;
 }
 
 .navbar-items{
     padding: 10px;
     color: white;
     font-size:15px;
-    
+    z-index: 1 ;
 }
 
 .navbar-items a{
@@ -81,7 +82,7 @@ video{
     border: 2px;
     align-items: center;
     cursor: pointer;
-    
+    z-index: 1;
     font-weight:bold;
 }
 .login-btn:hover{
@@ -110,6 +111,7 @@ video{
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .register-btn:hover{
