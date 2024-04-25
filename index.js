@@ -12,3 +12,7 @@
     closeLogin.addEventListener('click', () => {
         loginPage.style.display = 'none';
     });
+
+
+    
+     

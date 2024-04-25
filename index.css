@@ -45,13 +45,14 @@ video{
     margin-left: 800px;
     border-style: outset;
     border-width: 2px;
+    z-index: 1;
 }
 
 .navbar-items{
     padding: 10px;
     color: white;
     font-size:15px;
-    
+    z-index: 1;
 }
 
 .navbar-items a{
@@ -81,7 +82,7 @@ video{
     border: 2px;
     align-items: center;
     cursor: pointer;
-    
+    z-index: 1;
     font-weight:bold;
 }
 .login-btn:hover{
@@ -110,6 +111,7 @@ video{
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .register-btn:hover{
@@ -256,7 +258,7 @@ video{
 .image-container img{
     width: 300px;
     height: 360px;
-  
+    box-shadow: 2px 2px  2px 2px darkslategray;
     border-radius: 13px;
     
     cursor: pointer;
@@ -408,7 +410,7 @@ padding-left: 8px;
 }
 .footer-col .social-links a:hover{
     color: black;
-    background-color: white;
+    background-color:white;
 }
 .outer-footer{
     margin-top: 10px;
@@ -473,3 +475,4 @@ padding-left: 8px;
         color:red;
         margin-top: 10px;
     }
+    
